@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Bianca-Roman-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cookbook</title>
+</head>
+<body>
+    <header style="background-color: #d94e44;">
+        <div class="header-container">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Ingredients">Ingredients</a></li>
+                    <li><a href="#Steps">Steps</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id= "About">
+                <h2><i class="fa fa-info"></i>About</h2>
+                <form>
+                    <div>
+                       <label for="recipe-title">Recipe Title</label>
+                       <input type="text" id="recipe-title" placeholder="Title">
+                    </div>
+                    <div>
+                       <label for="description">Description</label>
+                       <textarea id="description" placeholder="About the recipe"></textarea>
+                    </div>
+                
+                    <div class="selectors">
+                      <div class="portions-selector">
+                       <label for="portions-selector" class="time-label">Portions</label>
+                       <input type="number" id="portions-selector" class="portions-input" min="0" max="100" value="1">
+                      </div>
+                      <div class="time-selector">
+                       <label for="minutes" class="time-label">Times(mins)</label>
+                       <input type="number" id="minutes" class="time-input" min="1" max="59" value="5">
+                      </div>
+                      <div class="dificulty-selector">
+                       <label for="dificulty-selector" class="time-label">Dificulty</label>
+                       <input type="number" id="dificulty-selector" class="dificulty-input" min="0" max="10" value="1">
+                      </div>
+                    </div>
+                </form>
+            </section>
+
+            <section id="Ingredients">
+                <h2><i class="fa fa-list"></i>Ingredients</h2>
+                <ul class="unordered-list ingredient-list">
+                    <li>300 gr brown rice</li>
+                    <li>2 pc red onions</li>
+                    <li>1 pc fresh red chilli</li>
+                    <li>25 gr unsalted butter</li>
+                    <li>6 pc large free-range eggs</li>
+                </ul>
+            
+                <form>
+                    <div class="form-row">
+                      <input type="number" id="quantity" placeholder="Qty." class="quantity">
+                      <select id="unit-selector" class="unit-input">
+                        <option value="kg" selected>Unit</option>
+                        <option value="kg">Kg</option>
+                        <option value="g">g</option>
+                        <option value="lb">lb</option>
+                        <option value="oz">oz</option>
+                        <option value="l">L</option>
+                        <option value="ml">ml</option>
+                      </select>
+                      <label for="unit-selector">of</label>
+                      <input type="text" placeholder="Ingredient" class="ingredient">
+                      <button class="plus-button">
+                        <i class="fas fa-plus-square"></i>
+                      </button>
+                    </div>
+                  </form>         
+            </section>
+
+            <section id= "Steps">
+                <h2><i class="fa fa-list-ol"></i>Steps</h2>
+                <ol>
+                    <li>Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water, leaving it in the colander.</li>
+                    <li>At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes, then carefully remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer.</li>
+                    <li>Meanwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally.</li>
+                </ol>
+            
+                <form>  
+                    <label for="Step">Step</label>
+                    <textarea id="Step" placeholder="Step description"></textarea>
+                </form>
+                <div class="space"></div>
+
+                <div class="center">
+                    <button class="add-button">
+                        <i class="fas fa-plus-square"></i> Add step
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="buttons">
+              <button class="cancel-button">
+                <i class="fas fa-trash-alt"></i> Cancel
+              </button>
+              <button class="save-button">
+                <i class="fa-regular fa-floppy-disk"></i> Save recipe
+              </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

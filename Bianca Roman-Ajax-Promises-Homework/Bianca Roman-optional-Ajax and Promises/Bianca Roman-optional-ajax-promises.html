@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+    <head>
+       
+        <title>Rick and Morty</title>
+        
+        <link rel="stylesheet" href="Bianca-Roman-optional.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Rick and Morty</h1>
+          
+            <div class="input-container">
+              <input type="text" id="characterId" placeholder="Enter Character ID">
+              <input type="button" value="Get Character" onclick="getCharacter()">
+              <input type="button" value="All Characters" onclick="getAllCharacters()">
+            </div>
+          
+            <div class="input-container">
+              <input type="text" id="locationId" placeholder="Enter Location ID">
+              <input type="button" value="Get Location  " onclick="getLocation()">
+              <input type="button" value="All Locations  " onclick="getAllLocations()">
+            </div>
+          
+            <div class="input-container">
+              <input type="text" id="episodeId" placeholder="Enter Episode ID">
+              <input type="button" value="Get Episode   " onclick="getEpisode()">
+              <input type="button" value="All Episodes  " onclick="getAllEpisodes()">
+            </div>
+            <br>
+          
+            <div class="input-container">
+              <input type="text" id="newCharacterName" placeholder="Enter Character Name">
+              <input type="text" id="newCharacterStatus" placeholder="Enter Character Status"><br><br>
+              <input type="text" id="newCharacterSpecies" placeholder="Enter Character Species">
+              <input type="text" id="newCharacterGender" placeholder="Enter Character Gender"><br><br>
+              <input type="button" value="Add New Character" onclick="addNewCharacter()">
+            </div>
+         
+            <div id="resultFrame"></div>
+        <script src="Bianca-Roman-optional.js" async defer></script>
+    </body>
+</html>

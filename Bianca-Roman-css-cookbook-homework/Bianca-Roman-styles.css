@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: "Muli";
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background-color: #d94e44;
+    box-sizing: border-box;
+}
+
+h2 {
+    background-color: #db4d3f;
+    color: white;
+    padding: 10px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+section {
+    background-color: #f6f4f4;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.add-button {
+    border: 2px solid #db4d3f;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #db4d3f;
+    width: 90%;
+    font-size: medium;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.ingredient-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredient-list li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.ingredient-list li i {
+    margin-right: 10px;
+}
+
+.cancel-button, .save-button {
+    background-color: white;
+    border: 2px solid #db4d3f;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.save-button {
+    background-color: #db4d3f;
+    color: white;
+}
+.cancel-button{
+    color: #db4d3f;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.info-title {
+    background-color: #db4d3f;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input[type="text"], textarea, .time-input, .portions-input, .dificulty-input {
+    width: 100%;
+}
+
+.time-input, .portions-input, .dificulty-input {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 15px;
+    border: none;
+}
+
+.selectors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time-label {
+    font-size: 18px;
+}
+
+.list-title {
+    background-color: #db4d3f;
+}
+
+.unordered-list {
+    list-style-type: none;
+    padding-left: 100px;
+    margin: 40px 0 30px;
+}
+
+.ingredient-list li::before {
+    content: "» ";
+    color: #db4d3f;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.quantity, .unit-input, .ingredient {
+    border: none;
+    width: 35%;
+    size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+form input[type="text"] {
+    border: none;
+    width: 100%;
+    size: 30px;
+    padding: 10px 5px 10px 5px;
+
+}
+
+.unit-input {
+    width: 15%;
+    margin: 10px 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus-button {
+    border: 2px solid #db4d3f;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #db4d3f;
+    cursor: pointer;
+}
+
+h2 i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+ol {
+    margin: 41px 45px 30px 20px;
+}
+
+ol li {
+    padding: 10px 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label[for="recipe-title"],
+label[for="description"],
+label[for="Step"] {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 150px;
+    border: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: large;
+}
+
+.quantity {
+    width: 7%; 
+}
+

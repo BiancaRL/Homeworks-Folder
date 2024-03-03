@@ -1,0 +1,32 @@
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    background: linear-gradient(to bottom right, #ffcc00, #ff6699, #33ccff);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

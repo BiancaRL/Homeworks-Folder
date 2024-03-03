@@ -1,0 +1,123 @@
+body {
+    font-family: "Muli";
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 120px 30px 120px;
+}
+
+.image-item {
+    text-align: center;
+    flex-basis: 30%;
+    margin: 10px 30px 25px 30px;
+}
+
+img {
+    max-width: 100%;
+    width: 42rem;
+    height: 35rem;
+    padding-bottom: 25px;
+  
+}
+
+.title {
+    margin: 10px 0;
+    font-size:xx-large;
+    font-weight:500;
+}
+
+.star-rating {
+    display: inline-block;
+  }
+  
+  .star-rating input[type="checkbox"] {
+    display: none;
+  }
+  
+  .star-rating label {
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    color: grey;
+  }
+  
+  .star-rating label::before {
+    content: "\2605"; 
+    color: #ddd;
+    padding-right: 20px;
+  }
+  
+  .star-rating input[type="checkbox"]:checked + label::before {
+    color: #f7d711; 
+  }
+
+  .heart-rating {
+    display: inline-block;
+    padding-left: 40px;;
+  }
+  
+  .heart-rating input[type="checkbox"] {
+    display: none;
+  }
+  
+  .heart-rating label {
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    color: grey;
+  }
+  
+  .heart-rating label::before {
+    content:  "\2764";
+    color: #ddd;
+    padding-right: 20px;
+  }
+  
+  .heart-rating input[type="checkbox"]:checked + label::before {
+    color: #da131d; 
+  }
+
+.text {
+    margin: 10px 0;
+    font-size: x-large;
+    font-style: inherit;
+    color: gray;
+    padding: 5px 10px 5px 10px;
+}
+
+.submit-buttons {
+    margin: 10px 0;
+    
+}
+
+.black-button, .white-button {
+    background-color: transparent;
+    border: 2px solid;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 800;
+
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    border-width: 3px;
+    border-color: black;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    border-width: 3px;
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YouTube Subscriptions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="Bianca Roman-responsive.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-4 mb-4">YouTube Subscriptions</h1>
+        
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4" id="subscription-container">
+            </div>
+        </div>
+        
+        <div class="modal fade" id="channelModal" tabindex="-1" aria-labelledby="channelModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="channelModalLabel">Channel Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 id="modalChannelName"></h5>
+                        <p id="modalChannelDescription"></p>
+                        <button id="modalSubscribeButton" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Bianca Roman-responsive.js" async defer></script>
+    </body>
+</html>

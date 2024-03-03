@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TheMealDB Recipe Search</title>
+  <link rel="stylesheet" href="Bianca-Roman-js-ajax-dom-homework.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <div class="container">
+      <h1>Find Meals For Your Ingredients</h1>
+      <p>Real food doesn't have ingredients, real food is ingredients.</p>
+      <p><em> - Jamie Oliver</em></p>
+      <div class="search-container">
+        <div class="input-with-icon">
+          <input type="text" id="ingredientInput" placeholder="Enter ingredient">
+          <i class="fa fa-search search-icon" onclick="searchRecipes()"></i>
+        </div>
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+      <h2>Your Search Results:</h2>
+      <div class="recipeList" id="recipeList"></div>
+    </div>
+  
+    <div class="overlay" id="overlay" style="display: none;">
+      <div class="recipeDetails" id="recipeDetails">
+        <span class="close" onclick="closeOverlay()">X</span>
+      </div>
+    </div>
+  
+    <script src="Bianca-Roman-Js-ajax-dom-homework.js"></script>
+  </body>
+  </html>
